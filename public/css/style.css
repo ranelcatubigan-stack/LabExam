@@ -1,0 +1,112 @@
+:root {
+    --bg-main: #14142b;         /* Deepest Navy Background */
+    --bg-card: #202040;         /* Lighter Navy for Cards */
+    --accent-primary: #6c5dd3;   /* Signature Purple */
+    --accent-cool: #00f2ff;      /* Neon Cyan */
+    --text-white: #ffffff;
+    --text-muted: #a0a0c0;
+    --border-subtle: rgba(255, 255, 255, 0.05);
+}
+
+/* Base Body Styling */
+body {
+    background-color: var(--bg-main);
+    color: var(--text-white);
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.01em;
+}
+
+/* Card Section (Glassmorphism inspired) */
+.card-section {
+    background: var(--bg-card);
+    border-radius: 20px;
+    padding: 24px;
+    margin-bottom: 24px;
+    border: 1px solid var(--border-subtle);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Typography */
+h2, h3 {
+    color: var(--text-white);
+    font-weight: 700;
+}
+
+label {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Futuristic Inputs */
+input, select, textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 12px 16px;
+    color: var(--text-white);
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--accent-cool);
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.2);
+}
+
+/* Action Button */
+button, .btn-submit {
+    background: var(--accent-primary);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(108, 93, 211, 0.4);
+    filter: brightness(1.1);
+}
+
+/* Data Table (Reference inspired) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    text-align: left;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    padding: 16px;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+tbody td {
+    padding: 16px;
+    border-bottom: 1px solid var(--border-subtle);
+    font-size: 0.9rem;
+}
+
+tbody tr:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* Status Indicator */
+.status-pill {
+    background: rgba(0, 242, 255, 0.1);
+    color: var(--accent-cool);
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
