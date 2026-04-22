@@ -9,8 +9,6 @@
     <div class="py-12">
         <div class="container">
 
-        <button onclick="window.location.href='/dashboard'">Go to Rice</button>
-        <button onclick="window.location.href='/dashboard-order'">Go to Order</button>
 
             {{-- UPDATE ORDER FORM --}}
             <form action="/dashboard-order-update/{{ $order->id }}" method="POST">
